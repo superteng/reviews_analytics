@@ -14,3 +14,11 @@ for d in data :
 	sumlen = sumlen + len(d)
 
 print('總長:', sumlen, ";平均長度為", sumlen/len(data))
+
+new = []
+count = 0
+for d in data :
+	if len(d) < 100 :
+		new.append(d)
+
+print('留言字數低於100的數量：', len(new))		
